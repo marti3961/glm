@@ -1,0 +1,92 @@
+<header class="site-header position-sticky" style="z-index: 10;">
+  @if (svc.isLoggedIn()) {
+    <div class="px-3 py-1 border-bottom text-end">
+      <div class="container">
+      Bienvenido, <span>{{usuario.nombre}}</span>
+      </div>
+    </div>
+  }
+
+  <div class="px-3 py-2 text-bg-white border-bottom">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a [routerLink]="['/']" class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-decoration-none">
+          <img src="./assets/img/logo.png" height="60" width="auto" alt="Logo" class="logo" />
+        </a>
+        @if(!svc.isLoggedIn()) {
+          <div class="text-end">
+            <a [routerLink]="['/login']" class="btn btn-primary me-2">Regresar a GLM</a>
+          </div>
+        }
+        @else{
+          <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small" style="color:rgb(255, 173, 13)!important;">
+            <li>
+              <a [routerLink]="['/']" class="nav-link text-primary">
+                <div class="d-flex flex-column align-items-center">
+                  <!-- <i class="fa-solid fa-gauge-high fa-1x"></i> -->
+                  <span>Dashboard</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="['/mensajes']" class="nav-link text-primary">
+                <div class="d-flex flex-column align-items-center">
+                  <span>Mensajes</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="['/cotizaciones']" class="nav-link text-primary">
+                <div class="d-flex flex-column align-items-center">
+                  <!-- <i class="fa-solid fa-file-invoice-dollar" style="font-size: medium;"></i> -->
+                  <span>Cotizaciones</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="['/productos']" class="nav-link text-primary">
+                <div class="d-flex flex-column align-items-center">
+                  <!-- <i class="fa-solid fa-truck-field fa-1x"></i> -->
+                  Productos
+                </div>
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="['/productos-extras']" class="nav-link text-primary">
+                <div class="d-flex flex-column align-items-center">
+                  Productos Extras
+                </div>
+              </a>
+            </li>
+            <li>
+              <a  class="btn btn-primary noscale dropdown-toggle d-block d-md-inline-block outline-0" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-solid fa-screwdriver-wrench fa-1x"></i>
+              </a>
+               <ul class="dropdown-menu">
+                <!-- <li><a [routerLink]="['/usuarios']" class="dropdown-item" href="#">Usuarios</a></li> -->
+                <li><a [routerLink]="['/sliders']" class="dropdown-item" href="#">Carousel</a></li>
+                <li><a [routerLink]="['/configuracion-general']" class="dropdown-item" href="#">Configuración General</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" (click)="logout()">Salir</a></li>
+              </ul>
+            </li>
+          </ul>
+        }
+
+      </div>
+    </div>
+  </div>
+</header>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 p-5">
+          <router-outlet></router-outlet>
+      </div>
+  </div>
+<div class="fixed-bottom">
+  <div class="text-center text-bg-white border-top">
+    <div class="container">
+      <p class="text-muted">GLM</p>
+    </div>
+  </div>
+</div>

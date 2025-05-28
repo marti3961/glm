@@ -1,0 +1,60 @@
+/* You can add global styles to this file, and also import other style files */
+.text-primary
+{
+  /* color: rgb(255, 173, 13) !important; */
+  color: black !important;
+
+}
+.btn-primary
+{
+ background-color: rgb(255, 173, 13) !important;
+ border-color: rgb(255, 173, 13) !important;
+}
+
+.site-header { box-shadow:
+  0 0.5rem 1rem rgba(0,0,0,0.15),inset 0 -1px 0 rgba(255,255,255,0.15) }
+
+.bg-primary
+{
+  background-color: rgb(255, 173, 13) !important;
+}
+
+
+body {
+  background: #f8f9fa;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.stat-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.progress {
+  height: 8px;
+}
+
+.trend-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.stat-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}

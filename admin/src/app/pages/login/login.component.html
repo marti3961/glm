@@ -1,0 +1,51 @@
+<header>
+<div class="px-3 py-2 text-bg-white border-bottom">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <a class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-decoration-none">
+        <img src="/assets/img/logo.png" height="60" width="auto" alt="Logo" class="logo" />
+      </a>
+      <div class="text-end">
+        <a [routerLink]="['/login']" class="btn btn-primary me-2">Regresar a GLM</a>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+<!-- Login Form Container -->
+<main class="d-flex justify-content-center align-items-start pt-4">
+  <form (ngSubmit)="onSubmit()" #loginForm="ngForm" class="form-signin w-100" style="max-width: 400px;">
+    <h1 class="h3 mb-4 fw-normal text-center">Inicio de Sesión</h1>
+
+    <!-- Email -->
+    <div class="form-floating mb-3">
+      <input
+        type="email"
+        class="form-control"
+        [(ngModel)]="email"
+        name="email"
+        id="floatingInput"
+        placeholder="name@example.com"
+        required
+      >
+      <label for="floatingInput">Usuario</label>
+    </div>
+
+    <!-- Password -->
+    <div class="form-floating mb-4">
+      <input
+        type="password"
+        class="form-control"
+        [(ngModel)]="password"
+        name="password"
+        id="floatingPassword"
+        placeholder="Password"
+        required
+      >
+      <label for="floatingPassword">Contraseña</label>
+    </div>
+
+    <!-- Submit -->
+    <button class="btn btn-primary w-100 py-2" type="submit">Iniciar sesión</button>
+  </form>
+</main>

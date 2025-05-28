@@ -1,0 +1,74 @@
+<div class="card shadow rounded-0">
+  <div class="p-3">
+    <h3><i class="fa-solid fa-store"></i> Slider</h3>
+  </div>
+
+  <div class="card-body ag-theme-quartz">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-6">
+          <div class="form-floating mb-3">
+            <input type="text" id="title" [(ngModel)]="slider.title" name="title" required class="form-control">
+            <label for="title">Título</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="text" id="subtitle" [(ngModel)]="slider.subtitle" name="subtitle" class="form-control">
+            <label for="subtitle">Subtítulo</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="text" id="button1_text" [(ngModel)]="slider.button1_text" name="button1_text" class="form-control">
+            <label for="button1_text">Texto Botón 1</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="text" id="button1_link" [(ngModel)]="slider.button1_link" name="button1_link" class="form-control">
+            <label for="button1_link">Enlace Botón 1</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="text" id="button2_text" [(ngModel)]="slider.button2_text" name="button2_text" class="form-control">
+            <label for="button2_text">Texto Botón 2</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="text" id="button2_link" [(ngModel)]="slider.button2_link" name="button2_link" class="form-control">
+            <label for="button2_link">Enlace Botón 2</label>
+          </div>
+          <div class="d-grid gap-2 mb-3">
+            <input type="file" #fileInput style="display: none;" (change)="onFileSelected($event)" />
+            <button class="btn btn-primary d-block" type="button" (click)="fileInput.click()">
+              Cambiar imagen
+            </button>
+          </div>
+          <div class="">
+            <!-- <img src="{{main_uri}}{{slider.image}}" name="image" class="img-fluid"> -->
+             <figcaption class="blockquote-footer">
+              La imagen debe ser de 1600px de ancho y 800px de alto.
+            </figcaption>
+            <img *ngIf="imagePreview" [src]="imagePreview" alt="Image preview" class="img-fluid" style="max-height: 300px;" />
+
+          </div>
+        </div>
+
+        <div class="col-6">
+          <div class="form-floating mb-3">
+            <input type="number" id="position" [(ngModel)]="slider.position" name="position" class="form-control" required>
+            <label for="position">Posición</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox"  name="active" [(ngModel)]="slider.active">
+            <label class="form-check-label" for="checkDefault">
+              Active
+            </label>
+          </div>
+          <div class="btn-toolbar mt-5 justify-content-end">
+            <button type="button" class="btn btn-secondary me-2" (click)="cancel()">Cancel</button>
+            <button type="button" class="btn btn-primary me-2" (click)="onSubmit()">Guardar Cambios</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

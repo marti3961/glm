@@ -1,0 +1,120 @@
+<div class="card shadow rounded-0">
+  <div class="p-3">
+    <h3><i class="fa-solid fa-gears"></i> Configuración general del Sitio</h3>
+  </div>
+  <div class="card-body ag-theme-quartz">
+    <div class="container py-4">
+<form (ngSubmit)="updateSettings()">
+  <div class="row">
+    <div class="col-md-6">
+      <h4>Información Principal</h4>
+      <hr/>
+      <div class="mb-3">
+        <div class="form-floating">
+          <input
+            id="siteName" type="text" class="form-control" placeholder="Site Name" [(ngModel)]="general_settings.site_name" name="site_name" required/>
+          <label for="siteName">Site Name</label>
+        </div>
+      </div>
+      <div class="mb-3">
+        <div class="form-floating">
+          <input id="siteEmail" type="email" class="form-control" placeholder="Site Email" [(ngModel)]="general_settings.site_email" name="site_email" required/>
+          <label for="siteEmail">Site Email</label>
+        </div>
+      </div>
+      <div class="mb-3" *ngIf="false">
+        <div class="form-floating">
+          <input id="siteLogo" type="text" class="form-control" placeholder="Site Logo" [(ngModel)]="general_settings.site_logo" name="site_logo"/>
+          <label for="siteLogo">Site Logo</label>
+        </div>
+      </div>
+      <div class="mb-3">
+        <div class="form-floating">
+          <input id="sitePhone" type="text" class="form-control" placeholder="Site Phone" [(ngModel)]="general_settings.site_phone" name="site_phone" required/>
+          <label for="sitePhone">Site Phone</label>
+        </div>
+      </div>
+      <div class="mb-3">
+        <div class="form-floating">
+          <input id="ubicacion" type="text" class="form-control" placeholder="Ubicacion" [(ngModel)]="general_settings.address" name="site_address" required/>
+          <label for="ubicacion">Ubicacion de Tu negocio</label>
+        </div>
+      </div>
+      <h4>Metadatos</h4>
+    <hr/>
+    <div class="mb-3">
+      <div class="form-floating">
+        <textarea id="mainDescription" class="form-control" placeholder="Main Description" [(ngModel)]="general_settings.main_description" name="main_description"></textarea>
+        <label for="mainDescription">Meta descripción</label>
+      </div>
+    </div>
+
+    <!-- Main Keywords -->
+    <div class="mb-3">
+      <div class="form-floating">
+        <textarea  id="mainKeywords"  class="form-control"  placeholder="Main Keywords"  [(ngModel)]="general_settings.main_keywords"  name="main_keywords"></textarea>
+        <label for="mainKeywords">Meta Keywords</label>
+      </div>
+    </div>
+    </div>
+    <div class="col-md-6">
+      <h4>Redes sociales</h4>
+      <hr/>
+      <!-- WhatsApp -->
+  <div class="mb-3">
+    <div class="form-floating">
+      <input id="whatsapp" type="text" class="form-control" placeholder="WhatsApp" [(ngModel)]="general_settings.whatsapp" name="whatsapp"
+      />
+      <label for="whatsapp">WhatsApp</label>
+    </div>
+  </div>
+
+  <!-- Facebook -->
+  <div class="mb-3">
+    <div class="form-floating">
+      <input id="facebook" type="text" class="form-control" placeholder="Facebook" [(ngModel)]="general_settings.facebook" name="facebook"/>
+      <label for="facebook">Facebook</label>
+    </div>
+  </div>
+
+  <!-- Instagram -->
+  <div class="mb-3">
+    <div class="form-floating">
+      <input id="instagram" type="text" class="form-control" placeholder="Instagram" [(ngModel)]="general_settings.instagram" name="instagram" />
+      <label for="instagram">Instagram</label>
+    </div>
+  </div>
+
+  <!-- X (formerly Twitter) -->
+  <div class="mb-3" *ngIf="false">
+    <div class="form-floating">
+      <input id="x" type="text" class="form-control" placeholder="X" [(ngModel)]="general_settings.x" name="x" />
+      <label for="x">X</label>
+    </div>
+  </div>
+
+  <!-- Pinterest -->
+  <div class="mb-3" *ngIf="false">
+    <div class="form-floating">
+      <input id="pinterest" type="text" class="form-control" placeholder="Pinterest" [(ngModel)]="general_settings.pinterest" name="pinterest"
+      />
+      <label for="pinterest">Pinterest</label>
+    </div>
+  </div>
+
+  <!-- LinkedIn -->
+  <div class="mb-3" *ngIf="false">
+    <div class="form-floating">
+      <input id="linkedin" type="text" class="form-control" placeholder="LinkedIn" [(ngModel)]="general_settings.linkedin" name="linkedin"
+      />
+      <label for="linkedin">LinkedIn</label>
+    </div>
+  </div>
+    </div>
+  </div>
+  <!-- Submit Button -->
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,105 @@
+<div class="modal-content shadow rounded">
+  <div class="modal-header bg-primary text-white">
+    <h5 class="modal-title" id="mensajeModalLabel">
+      Cotizacion
+    </h5>
+    <button type="button" class="btn-close btn-close-white" aria-label="Close" (click)="closeModal()"></button>
+  </div>
+
+  <div class="modal-body bg-light">
+
+    <div class="row">
+      <div class="col-12 text-center mb-4">
+        <div class="bg-primary text-white">
+          <h1 class="text-white">Cotización</h1>
+        </div>
+      </div>
+      <!-- Datos del cliente -->
+       <div class="col-md-6">
+        <div class="card mb-4">
+          <div class="card-header bg-primary text-white">
+            <strong class="text-white">Datos del cliente</strong>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">
+              <strong>Nombre:</strong>
+              {{ cotizacion.name}}
+            </li>
+            <li class="list-group-item">
+              <strong>Email :</strong>
+              {{ cotizacion.email }}
+            </li>
+            <li class="list-group-item">
+              <strong>Teléfono :</strong>
+              {{ cotizacion.phone }}
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card mb-4">
+          <div class="card-header bg-primary text-white">
+          <strong>Cotización GLM</strong>
+          </div>
+          <ul class="list-group list-group-flush">
+          <li class="list-group-item">
+            <strong>ID Cotizacion : </strong>
+            {{cotizacion.id}}
+          </li>
+          <li class="list-group-item">
+            <strong>Fecha : </strong>{{ cotizacion.created_at | date:'yyyy-MM-dd' }}
+          </li>
+          </ul>
+        </div>
+      </div>
+  <div class="col-12">
+    <div class="card mb-4">
+      <div class="card-header bg-primary text-white">
+        <strong>Detalles de la cotización</strong>
+      </div>
+      <div class="card-body">
+        <table class="table table-striped mb-0">
+          <thead>
+            <tr>
+              <th>Cantidad</th>
+              <th>Descripción</th>
+              <th>Precio Unitario</th>
+              <th>Precio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{ cotizacion.detalle_precios.costo_concreto.cantidad }}</td>
+              <td>Concreto ({{ cotizacion.detalle_precios.costo_concreto.nombre }})</td>
+              <td>{{ cotizacion.detalle_precios.costo_concreto.costo_unitario|currency}}</td>
+              <td>{{ cotizacion.detalle_precios.costo_concreto.valor | currency  }}</td>
+            </tr>
+            <tr *ngFor="let extra of cotizacion.detalle_precios.costo_extras.detalles">
+              <td>{{ extra.cantidad }}</td>
+              <td>{{ extra.nombre }}</td>
+              <td>{{ extra.precio_unitario | currency}}</td>
+              <td>{{ extra.total | currency }}</td>
+            </tr>
+            <tr>
+              <td colspan="2"></td>
+              <th>Tipo de tiro ({{ cotizacion.detalle_precios.costo_tipo_tiro.nombre }})</th>
+              <td>{{ cotizacion.detalle_precios.costo_tipo_tiro.valor | currency }}</td>
+            </tr>
+            <tr class="bg-success text-white">
+              <td colspan="2"></td>
+              <th>{{ cotizacion.detalle_precios.costo_total.nombre }}</th>
+              <td><strong>{{ cotizacion.detalle_precios.costo_total.valor | currency }}</strong></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+      <div class="col-12 text-center">
+        <!-- <button id="print_btn" class="btn btn-primary">Imprimir Cotización</button> -->
+      </div>
+    </div>
+
+  </div>
+</div>

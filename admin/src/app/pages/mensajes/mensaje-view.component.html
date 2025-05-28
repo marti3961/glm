@@ -1,0 +1,113 @@
+<div class="modal-content shadow rounded">
+  <div class="modal-header bg-primary text-white">
+    <h5 class="modal-title" id="mensajeModalLabel">
+      {{ mensaje?.nombre }} - {{ mensaje?.empresa }}
+    </h5>
+    <button
+      type="button"
+      class="btn-close btn-close-white"
+      aria-label="Close"
+      (click)="closeModal()"
+    ></button>
+  </div>
+
+  <div class="modal-body bg-light">
+
+    <!-- Nombre -->
+    <div class="form-floating mb-3">
+      <input
+        type="text"
+        class="form-control"
+        id="floatingNombre"
+        [value]="mensaje?.nombre"
+        disabled
+      />
+      <label for="floatingNombre">Nombre</label>
+    </div>
+
+    <!-- Apellidos -->
+    <div class="form-floating mb-3">
+      <input
+        type="text"
+        class="form-control"
+        id="floatingApellidos"
+        [value]="mensaje?.apellidos"
+        disabled
+      />
+      <label for="floatingApellidos">Apellidos</label>
+    </div>
+
+    <!-- Empresa -->
+    <div class="form-floating mb-3">
+      <input
+        type="text"
+        class="form-control"
+        id="floatingEmpresa"
+        [value]="mensaje?.empresa"
+        disabled
+      />
+      <label for="floatingEmpresa">Empresa</label>
+    </div>
+
+    <!-- Teléfono -->
+    <div class="form-floating mb-3">
+      <input
+        type="tel"
+        class="form-control"
+        id="floatingTelefono"
+        [value]="mensaje?.telefono"
+        disabled
+      />
+      <label for="floatingTelefono">Teléfono</label>
+    </div>
+
+    <!-- Email -->
+    <div class="form-floating mb-3">
+      <input
+        type="email"
+        class="form-control"
+        id="floatingEmail"
+        [value]="mensaje?.email"
+        disabled
+      />
+      <label for="floatingEmail">Email</label>
+    </div>
+
+    <!-- Asunto -->
+    <div class="form-floating mb-3">
+      <input
+        type="text"
+        class="form-control"
+        id="floatingAsunto"
+        [value]="mensaje?.asunto"
+        disabled
+      />
+      <label for="floatingAsunto">Asunto</label>
+    </div>
+
+    <!-- Mensaje -->
+    <div class="form-floating mb-3">
+      <textarea
+        class="form-control"
+        placeholder="Mensaje"
+        id="floatingMensaje"
+        style="height: 100px"
+        disabled
+      >{{ mensaje?.mensaje }}</textarea>
+      <label for="floatingMensaje">Mensaje</label>
+    </div>
+
+    <!-- Fecha -->
+    <div class="form-floating mb-3">
+      <input
+        type="text"
+        class="form-control"
+        id="floatingFecha"
+        [value]="mensaje?.created_at"
+        disabled
+      />
+      <label for="floatingFecha">Fecha</label>
+    </div>
+
+  </div>
+</div>

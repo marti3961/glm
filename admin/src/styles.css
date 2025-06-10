@@ -1,14 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
 .text-primary
 {
-  /* color: rgb(255, 173, 13) !important; */
+  /* color: #7f141f !important; */
   color: black !important;
 
 }
 .btn-primary
 {
- background-color: rgb(255, 173, 13) !important;
- border-color: rgb(255, 173, 13) !important;
+ background-color: #7f141f !important;
+ border-color: #7f141f !important;
 }
 
 .site-header { box-shadow:
@@ -16,7 +16,7 @@
 
 .bg-primary
 {
-  background-color: rgb(255, 173, 13) !important;
+  background-color: #7f141f !important;
 }
 
 

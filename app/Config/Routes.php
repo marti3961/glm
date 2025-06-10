@@ -10,6 +10,13 @@ $routes->options('(:any)', function () {
 });
 //public views routing 
 $routes->get('/', 'Home::index');
+$routes->get('/quienes-somos', 'Home::quienes_somos');
+$routes->get('/servicios/quieres-rentar-vender', 'Home::quieres_vender_rentar');
+$routes->get('/servicios/quieres-rentar', 'Home::quieres_rentar');
+$routes->get('/servicios/quieres-vender', 'Home::quieres_vender');
+$routes->get('/servicios/quieres-financiamiento', 'Home::quieres_financiamiento');
+$routes->get('/desarrollos', 'Home::contacto');
+$routes->get('/proximos-proyectos', 'Home::contacto');
 $routes->get('/contacto', 'Home::contacto');
 $routes->post('contacto/enviarMensaje', 'Home::enviarMensaje');
 $routes->get('/sitemap', 'Sitemap::index');

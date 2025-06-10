@@ -56,24 +56,24 @@ abstract class BaseController extends Controller
         // Preload any models, libraries, etc, here.
         $configModel = new \App\Models\GeneralSettingsModel();
         $config = $configModel->first();
-        // E.g.: $this->session = service('session');
-        $this->data['site_name'] = $config['site_name'];
-        $this->data['site_email'] = $config['site_email'];
-        $this->data['site_phone'] = $config['site_phone'];
-        $this->data['site_logo'] = $config['site_logo'];
-        $this->data['site_main_description'] = $config['main_description'];
-        $this->data['site_main_keywords'] = $config['main_keywords'];
-        $this->data['site_whatsapp'] = $config['whatsapp'];
-        $this->data['site_address'] = $config['address'];
-        $this->data['site_facebook'] = $config['facebook'];
-        $this->data['site_instagram'] = $config['instagram'];
-        $this->data['site_x'] = $config['x'];
-        $this->data['site_pinterest'] = $config['pinterest'];
-        $this->data['site_linkedin'] = $config['linkedin'];
-        $this->data['site_created_at'] = $config['created_at'];
-        $this->data['site_updated_at'] = $config['updated_at'];
-        $this->data['site_bombeo_1_10'] = $config['bombeo_1_10'];
-        $this->data['site_bombeo_1mc'] = $config['bombeo_1mc'];
+        $this->data['site_name'] = $config['site_name'] ?? '';
+        $this->data['site_email'] = $config['site_email'] ?? '';
+        $this->data['site_phone'] = $config['site_phone'] ?? '';
+        $this->data['site_logo'] = $config['site_logo'] ?? '';
+        $this->data['site_main_description'] = $config['main_description'] ?? '';
+        $this->data['site_main_keywords'] = $config['main_keywords'] ?? '';
+        $this->data['site_whatsapp'] = $config['whatsapp'] ?? '';
+        $this->data['site_address'] = $config['address'] ?? '';
+        $this->data['site_facebook'] = $config['facebook'] ?? '';
+        $this->data['site_instagram'] = $config['instagram'] ?? '';
+        $this->data['site_x'] = $config['x'] ?? '';
+        $this->data['site_pinterest'] = $config['pinterest'] ?? '';
+        $this->data['site_linkedin'] = $config['linkedin'] ?? '';
+        $this->data['site_created_at'] = $config['created_at'] ?? '';
+        $this->data['site_updated_at'] = $config['updated_at'] ?? '';
+        $this->data['site_bombeo_1_10'] = $config['bombeo_1_10'] ?? '';
+        $this->data['site_bombeo_1mc'] = $config['bombeo_1mc'] ?? '';
+
     }
     protected function render($view, $data = [])
     {

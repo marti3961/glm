@@ -10,7 +10,8 @@ class Cors implements FilterInterface
     protected $allowedOrigins = [
         'https://admin.GLM.com.mx',
         'https://GLM.com.mx',
-        'https://localhost:4200'
+        'https://localhost:4200',
+        'http://localhost:4200'
     ];
 
     public function before(RequestInterface $request, $arguments = null)

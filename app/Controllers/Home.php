@@ -12,16 +12,29 @@ class Home extends BaseController
         $sliders = $sliders_->orderBy('position', 'ASC')->findAll();
         return $this->render('Inicio',['sliders'=> $sliders]);
     }
-    public function sobre_nosotros(): string
+    public function quienes_somos(): string
     {
-        return $this->render('SobreNosotros',[]);
+        return $this->render('QuienesSomos',[]);
         
     }
 
-    public function testimonios(): string
+    public function quieres_vender_rentar(): string 
     {
-        return $this->render('Testimonios',[]);
+        return $this->render('QuieresVenderRentar',[]); 
     }
+    public function quieres_rentar(): string 
+    {
+        return $this->render('QuieresRentar',[]); 
+    }
+    public function quieres_vender(): string 
+    {
+        return $this->render('QuieresVender',[]); 
+    }
+    public function quieres_financiamiento(): string 
+    {
+        return $this->render('QuieresFinanciamiento',[]); 
+    }
+
 
     public function preguntas_frecuentes(): string
     {

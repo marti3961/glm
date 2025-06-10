@@ -29,7 +29,7 @@ class Database extends Config
         'hostname'     => '127.0.0.1',
         'username'     => 'sa',
         'password'     => 'Test3r123',
-        'database'     => 'site_manager_db',
+        'database'     => 'glm_site_db',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',
         'pConnect'     => false,

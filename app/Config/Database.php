@@ -28,7 +28,7 @@ class Database extends Config
         'DSN'          => '',
         'hostname'     => '127.0.0.1',
         'username'     => 'sa',
-        'password'     => 'Test3r123',
+        'password'     => 'Test3r123',//T*38DZujy*oJ
         'database'     => 'glm_site_db',
         'DBDriver'     => 'MySQLi',
         'DBPrefix'     => '',

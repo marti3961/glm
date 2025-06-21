@@ -6,39 +6,48 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <?= $this->renderSection('metadata') ?>
   <!-- Favicons -->
-  <link href="/assets/img/favicon.png" rel="icon">
-  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="favicon.ico" rel="icon">
+
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
   <!-- Vendor CSS Files -->
-  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="/assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <!-- Main CSS File -->
-  <link href="/assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
 <body class="index-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top pb-0">
+  <header id="header" class="header d-flex align-items-center fixed-top p-2">
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
-      <a href="/" class="d-flex align-items-center">
-        <img src="/assets/img/logo.png" style="width:300px !important" alt="">
+      <a href="./" class="d-flex align-items-center">
+        <img src="assets/img/logo.png" style="width:300px !important" alt="">
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="/" class="active">Inicio</a></li>
-          <li><a href="/quienes-somos">¿Quiénes somos?</a></li>
-          <li><a href="/servicios/quieres-rentar-vender">Servicios GLM</a></li>
-          <li><a href="/desarrollos">Desarrollos</a></li>
-          <li><a href="/proximos-proyectos">Próximos proyectos</a></li>
-          <li><a href="/contacto">Contacto</a></li>
+          <li><a href="./" class="active">Inicio</a></li>
+          <li><a href="quienes-somos">¿Quiénes somos?</a></li>
+          <li><a href="servicios-quieres-rentar-vender">Servicios GLM</a></li>
+          <li class="dropdown">
+            <a href="#">Desarrollos <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+            <ul>
+              <li><a href="desarrollo-san-antonio-pachuquilla">San Antonio Pachuquilla</a></li>
+              <li><a href="desarrollo-valle-del-alamo">Valle del Alamo</a></li>
+              <li><a href="desarrollo-las-peras">Las Peras</a></li>
+              <li><a href="desarrollo-privada-la-palma">Privada la palma</a></li>
+              <li><a href="desarrollo-paseo-de-las-reynas">Paseo de las Reynas</a></li>
+            </ul>
+          </li>
+          <li><a href="proximos-proyectos">Próximos proyectos</a></li>
+          <li><a href="contacto">Contacto</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -112,14 +121,14 @@
   <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="/assets/vendor/php-email-form/validate.js"></script>
-  <script src="/assets/vendor/aos/aos.js"></script>
-  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
 
   <!-- Main JS File -->
-  <script src="/assets/js/main.js"></script>
+  <script src="assets/js/main.js"></script>
 
 </body>
 

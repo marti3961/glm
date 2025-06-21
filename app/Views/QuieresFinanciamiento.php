@@ -47,10 +47,10 @@
             <div class="service-box">
               <h4>Servicios GLM</h4>
               <div class="services-list">
-                <a href="/servicios/quieres-rentar"><i class="bi bi-arrow-right-circle"></i><span>¿Quieres rentar?</span></a>
-                <a href="/servicios/quieres-vender"><i class="bi bi-arrow-right-circle"></i><span>¿Quieres vender?</span></a>
-                <a href="/servicios/quieres-financiamiento" class="active"><i class="bi bi-arrow-right-circle"></i><span>¿Quieres financiamiento?</span></a>
-                <a href="/proximos-proyectos"><i class="bi bi-arrow-right-circle"></i><span>Próximos proyectos</span></a>
+                <a href="servicios-quieres-rentar"><i class="bi bi-arrow-right-circle"></i><span>¿Quieres rentar?</span></a>
+                <a href="servicios-quieres-vender"><i class="bi bi-arrow-right-circle"></i><span>¿Quieres vender?</span></a>
+                <a href="servicios-quieres-financiamiento" class="active"><i class="bi bi-arrow-right-circle"></i><span>¿Quieres financiamiento?</span></a>
+                <a href="proximos-proyectos"><i class="bi bi-arrow-right-circle"></i><span>Próximos proyectos</span></a>
               </div>
             </div>
 
@@ -72,7 +72,7 @@
           </div>
 
           <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <img src="/assets/img/servicios/Detalles-Servicios4.jpg" alt="" class="img-fluid services-img">
+            <img src="assets/img/servicios/Detalles-Servicios4.jpg" alt="" class="img-fluid services-img">
             <h3>¿Ya cuentas con algún tipo de crédito?</h3>
             <p>En GLM, nuestro equipo inmobiliario está listo para asesorarte y ayudarte a encontrar el crédito que mejor se adapte a tus necesidades y posibilidades.
               <br/>Ya sea que cuentes con Infonavit, Fovissste, crédito bancario o estés explorando opciones, te guiamos paso a paso para que tomes la mejor decisión y hagas realidad el sueño de tu nuevo hogar.</p>

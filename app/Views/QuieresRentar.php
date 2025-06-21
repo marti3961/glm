@@ -27,8 +27,8 @@
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="index.html">Servicios</a></li>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/">Servicios</a></li>
             <li class="current">¿Quieres rentar?</li>
           </ol>
         </div>
@@ -47,10 +47,10 @@
             <div class="service-box">
               <h4>Servicios GLM</h4>
               <div class="services-list">
-                <a href="/servicios/quieres-rentar" class="active"><i class="bi bi-arrow-right-circle"></i><span>¿Quieres rentar?</span></a>
-                <a href="/servicios/quieres-vender"><i class="bi bi-arrow-right-circle"></i><span>¿Quieres vender?</span></a>
-                <a href="/servicios/quieres-financiamiento"><i class="bi bi-arrow-right-circle"></i><span>¿Quieres financiamiento?</span></a>
-                <a href="/proximos-proyectos"><i class="bi bi-arrow-right-circle"></i><span>Próximos proyectos</span></a>
+                <a href="servicios-quieres-rentar" class="active"><i class="bi bi-arrow-right-circle"></i><span>¿Quieres rentar?</span></a>
+                <a href="servicios-quieres-vender"><i class="bi bi-arrow-right-circle"></i><span>¿Quieres vender?</span></a>
+                <a href="servicios-quieres-financiamiento"><i class="bi bi-arrow-right-circle"></i><span>¿Quieres financiamiento?</span></a>
+                <a href="proximos-proyectos"><i class="bi bi-arrow-right-circle"></i><span>Próximos proyectos</span></a>
               </div>
             </div>
 
@@ -72,7 +72,7 @@
           </div>
 
           <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <img src="/assets/img/servicios/Detalles-Servicios2.jpg" alt="" class="img-fluid services-img">
+            <img src="assets/img/servicios/Detalles-Servicios2.jpg" alt="" class="img-fluid services-img">
             <h3>¡Rentar con GLM es más fácil de lo que imaginas!</h3>
             <p>¿Aún no estás listo para comprar? Tenemos casas en renta listas para ti, en fraccionamientos cómodos, seguros y con todo lo que necesitas para vivir tranquilo desde el primer día.</p>
             <ul>

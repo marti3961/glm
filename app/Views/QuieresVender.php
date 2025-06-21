@@ -47,10 +47,10 @@
             <div class="service-box">
               <h4>Servicios GLM</h4>
               <div class="services-list">
-                <a href="/servicios/quieres-rentar" ><i class="bi bi-arrow-right-circle"></i><span>¿Quieres rentar?</span></a>
-                <a href="/servicios/quieres-vender" class="active"><i class="bi bi-arrow-right-circle"></i><span>¿Quieres vender?</span></a>
-                <a href="/servicios/quieres-financiamiento"><i class="bi bi-arrow-right-circle"></i><span>¿Quieres financiamiento?</span></a>
-                <a href="/proximos-proyectos"><i class="bi bi-arrow-right-circle"></i><span>Próximos proyectos</span></a>
+                <a href="servicios-quieres-rentar" ><i class="bi bi-arrow-right-circle"></i><span>¿Quieres rentar?</span></a>
+                <a href="servicios-quieres-vender" class="active"><i class="bi bi-arrow-right-circle"></i><span>¿Quieres vender?</span></a>
+                <a href="servicios-quieres-financiamiento"><i class="bi bi-arrow-right-circle"></i><span>¿Quieres financiamiento?</span></a>
+                <a href="proximos-proyectos"><i class="bi bi-arrow-right-circle"></i><span>Próximos proyectos</span></a>
               </div>
             </div>
 
@@ -72,7 +72,7 @@
           </div>
 
           <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <img src="/assets/img/servicios/Detalles-Servicios3.jpg" alt="" class="img-fluid services-img">
+            <img src="assets/img/servicios/Detalles-Servicios3.jpg" alt="" class="img-fluid services-img">
             <h3>¿Tienes una casa, Departamento, o Terreno?</h3>
             <p>Deja tu propiedad en manos expertas. En GLM, nuestro equipo se encarga de todo el proceso:</p>
             <ul>

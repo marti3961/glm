@@ -11,11 +11,15 @@ $routes->options('(:any)', function () {
 //public views routing 
 $routes->get('/', 'Home::index');
 $routes->get('/quienes-somos', 'Home::quienes_somos');
-$routes->get('/servicios/quieres-rentar-vender', 'Home::quieres_vender_rentar');
-$routes->get('/servicios/quieres-rentar', 'Home::quieres_rentar');
-$routes->get('/servicios/quieres-vender', 'Home::quieres_vender');
-$routes->get('/servicios/quieres-financiamiento', 'Home::quieres_financiamiento');
-$routes->get('/desarrollos', 'Home::contacto');
+$routes->get('/servicios-quieres-rentar-vender', 'Home::quieres_vender_rentar');
+$routes->get('/servicios-quieres-rentar', 'Home::quieres_rentar');
+$routes->get('/servicios-quieres-vender', 'Home::quieres_vender');
+$routes->get('/servicios-quieres-financiamiento', 'Home::quieres_financiamiento');
+$routes->get('/desarrollo-san-antonio-pachuquilla', 'Home::san_antonio_pachuquilla');
+$routes->get('/desarrollo-las-peras', 'Home::las_peras');
+$routes->get('/desarrollo-paseo-de-las-reynas', 'Home::paseo_de_las_reynas');
+$routes->get('/desarrollo-privada-la-palma', 'Home::privada_la_palma');
+$routes->get('/desarrollo-valle-del-alamo', 'Home::valle_del_alamo');
 $routes->get('/proximos-proyectos', 'Home::contacto');
 $routes->get('/contacto', 'Home::contacto');
 $routes->post('contacto/enviarMensaje', 'Home::enviarMensaje');

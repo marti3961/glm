@@ -47,10 +47,10 @@
             <div class="service-box">
               <h4>Servicios GLM</h4>
               <div class="services-list">
-                <a href="/servicios/quieres-rentar" ><i class="bi bi-arrow-right-circle"></i><span>¿Quieres rentar?</span></a>
-                <a href="/servicios/quieres-vender"><i class="bi bi-arrow-right-circle"></i><span>¿Quieres vender?</span></a>
-                <a href="/servicios/quieres-financiamiento"><i class="bi bi-arrow-right-circle"></i><span>¿Quieres financiamiento?</span></a>
-                <a href="/proximos-proyectos"><i class="bi bi-arrow-right-circle"></i><span>Próximos proyectos</span></a>
+                <a href="servicios-quieres-rentar"><i class="bi bi-arrow-right-circle"></i><span>¿Quieres rentar?</span></a>
+                <a href="servicios-quieres-vender"><i class="bi bi-arrow-right-circle"></i><span>¿Quieres vender?</span></a>
+                <a href="servicios-quieres-financiamiento"><i class="bi bi-arrow-right-circle"></i><span>¿Quieres financiamiento?</span></a>
+                <a href="proximos-proyectos"><i class="bi bi-arrow-right-circle"></i><span>Próximos proyectos</span></a>
               </div>
             </div>
 
@@ -66,13 +66,13 @@
               <i class="bi bi-headset help-icon"></i>
               <h4>Tienes preguntas?</h4>
               <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-telephone me-2"></i> <span><?= $site_phone ?></span></p>
-              <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a href="mailto:contact@example.com"><?= $site_email ?></a></p>
+              <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a href="mailto:contact@example.com"><?= $site_email?></a></p>
             </div>
 
           </div>
 
           <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
-            <img src="/assets/img/servicios/Detalles-Servicios1.jpg" alt="" class="img-fluid services-img">
+            <img src="assets/img/servicios/Detalles-Servicios1.jpg" alt="" class="img-fluid services-img">
             <h3>¿Tienes una casa, Departamento, o Terreno?</h3>
             <p>Deja tu propiedad en manos expertas. En GLM, nuestro equipo se encarga de todo el proceso:</p>
             <ul>

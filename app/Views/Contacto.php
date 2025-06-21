@@ -8,154 +8,167 @@
 <meta property="og:description" content="Contáctenos para obtener más información sobre nuestros servicios de concreto, obra civil, cemento y asesoría. Estamos aquí para ayudarle a construir hoy mismo.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="<?= current_url() ?>">
-<title>Contáctenos - GLM</title>
+<title>CATÁCTANOS</title>
 <?= $this->endSection();?>
 <?= $this->section('content') ?>
-<div id="banner-area" class="banner-area" style="background-image:url(images/banner/Contacto.jpg)">
-  <div class="banner-text">
-    <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-              <div class="banner-heading">
-                <h1 class="banner-title">Contáctenos</h1>
-              </div>
+  <main class="main">
+
+<div class="page-title" data-aos="fade">
+      <div class="heading">
+        <div class="container">
+          <div class="row d-flex justify-content-center text-center">
+            <div class="col-lg-8">
+              <h1>CATÁCTANOS  </h1>
+            </div>
           </div>
         </div>
-    </div>
+      </div>
+      <nav class="breadcrumbs">
+        <div class="container">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Contact</li>
+          </ol>
+        </div>
+      </nav>
   </div>
-</div>
-<section id="main-container" class="main-container">
-  <div class="container">
+      <!-- Contact Section -->
+    <section id="contact" class="contact section">
 
-    <div class="row text-center">
-      <div class="col-12">
-        <h3 class="section-sub-title">Construye hoy mismo</h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="ts-service-box-bg text-center h-100">
-          <span class="ts-service-icon icon-round">
-          <a href="https://web.whatsapp.com/send?phone=<?= str_replace('-', '', $site_whatsapp ?? '') ?>&text=Hola%20quiero%20más%20información" target="_blank"><i class="fab fa-whatsapp mr-0"></i></a>
-          </span>
-          <div class="ts-service-box-content">
-            <h4>whatsapp</h4>
-            <p><?= $site_whatsapp ?? '#' ?></p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="ts-service-box-bg text-center h-100">
-          <span class="ts-service-icon icon-round">
-          <a href="mailto:<?= $site_email ?? '#' ?>"><i class="fa fa-envelope mr-0"></i></a>
-          </span>
-          <div class="ts-service-box-content">
-            <h4>Escribanos</h4>
-            <p><?= $site_email ?? '#' ?></p>
-          </div>
-        </div>
-      </div><!-- Col 2 end -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      <div class="col-md-4">
-        <div class="ts-service-box-bg text-center h-100">
-          <span class="ts-service-icon icon-round">
-            <a href="tel:<?= $site_phone ?? '#' ?>"><i class="fa fa-phone-square mr-0"></i></a>
-          </span>
-          <div class="ts-service-box-content">
-            <h4>Llámenos</h4>
-            <p><?= $site_phone ?? '#' ?></p>
+        <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
+          
+            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2127.9414570729778!2d-98.71650167142185!3d20.090576546154693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1a70d468e9f63%3A0xf0a1d694a92b78d5!2sGLM%20Arquitectura!5e0!3m2!1ses-419!2smx!4v1750177309368!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div><!-- End Google Maps -->
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4">
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h4>Dirección</h4>
+                <p>Av Reyna de los Venturosos 1003</p>
+                <p>Av Reyna de los Venturosos 1003,<br/> Privada de las Reynas V, 42184 Paseo de las Reynas, Hgo.</p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <i class="bi bi-telephone flex-shrink-0"></i>
+              <div>
+                <h3>Llámanos</h3>
+                <p><?= $site_phone ?? $site_whatsapp ?></p>
+              </div>
+            </div><!-- End Info Item -->
+
+            <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="500">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h3>Escríbenos</h3>
+                <p><?= $site_email ?? '#' ?></p>
+              </div>
+            </div><!-- End Info Item -->
+
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="gap-60"></div>
-    <div class="google-map">
-    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1874.4725056436546!2d-98.83046327062112!3d20.01082246432833!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1a21b3c26aac9%3A0xf86ee64edcfd068f!2sCarr.%20Acayuca%2C%2042191%20Hgo.!5e0!3m2!1ses!2smx!4v1744491694214!5m2!1ses!2smx" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    <div class="gap-40"></div>
-    <div class="row">
-      <div class="col-md-12">
-        <h3 class="column-title">No dude en ponerse en contacto con nosotros.</h3>
-        <div id="result" class="alert alert-success d-none mt-5">
-          <p></p>
-        </div>
-        <form id="contactForm" action="#" method="post" role="form">
-        <input type="hidden" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>">
-          <div class="error-container"></div>
-            <div class="row">
-              <div class="col-md-4 mb-4">
-                <div class="form-floating">
-                  <input class="form-control" name="nombre" id="nombre" placeholder="" type="text" required>
-                  <label for="name">Nombre</label>
+
+          <div class="col-lg-8">
+              <div id="result" class="alert alert-success d-none mt-5"></div>
+              <form id="contactForm" action="#" method="post" role="form" class="php-email-form aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+              <input type="hidden" name="<?= csrf_token() ?>" value="<?= csrf_hash() ?>">
+              <div class="row my-4">
+                <div class="col">
+                  <input type="text" id="nombre" class="form-control" name="nombre" placeholder="Nombre" required>
+                </div>
+                <div class="col">
+                  <input type="email" id="correo" class="form-control" name="correo" placeholder="Correo" required>
                 </div>
               </div>
-              <div class="col-md-4 mb-4">
-                <div class="form-floating">
-                  <input class="form-control" name="apellidos" id="apellidos" placeholder="" type="text" required>
-                  <label for="apellido">Apellidos</label>
+              <div class="row my-4">
+                <div class="col-6">
+                  <input type="tel" placeholder="Telefono" class="form-control rounded-0" 
+                  id="telefono" name="telefono" pattern="[0-9]{10}" required>
+                </div>
+                <div class="col-6">
+                  <input type="text" class="form-control" placeholder="¿En qué tiempo tienes planeado comprar tu casa?
+                  " id="tiempo" name="tiempo" required>
                 </div>
               </div>
-              <div class="col-md-4 mb-4">
-                <div class="form-floating">
-                  <input class="form-control" name="empresa" id="empresa" placeholder="" type="text" required>
-                  <label for="empresa">Empresa</label>
+              <div class="row my-4">
+                <div class="col-6">
+                  <input type="text" class="form-control" placeholder="¿Qué presupuesto tienes en mente para tu nueva casa?
+                  " id="presupuesto" name="presupuesto" required>
+                </div>
+                <div class="col-6">
+                  <input type="text" class="form-control" placeholder="¿En qué zona estás interesado en comprar tu casa?
+                  " id="zona" name="zona" required>
                 </div>
               </div>
-              <div class="col-md-4 mb-4">
-                <div class="form-floating">
-                  <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="771-111-11-11" required>
-                  <label for="telefono">Teléfono</label>
-                </div>
-              </div>
-              <div class="col-md-4 mb-4">
-                <div class="form-floating">
-                  <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com" required>
-                  <label for="email">Email</label>
-                </div>
-              </div>
-              <div class="col-md-4 mb-4">
-                <div class="form-floating">
-                  <select class="form-control" name="asunto" id="asunto" required>
-                    <option value="" disabled selected>Seleccione un servicio</option>
-                    <option value="Concreto">Concreto</option>
-                    <option value="Obra Civil">Obra Civil</option>
-                    <option value="Cemento">Cemento</option>
-                    <option value="Asesoria">Asesoría</option>
+              <div class="row my-4">
+                <div class="col">
+                  <select name="modelo" id="modelo" class="form-control rounded-0" required>
+                    <option disabled selected value>¿Con qué financiamiento planeas comprar tu casa?
+                    </option>
+                    <option value="Contado">Contado
+                    </option>
+                    <option value="Infonavit">Infonavit</option>
+                    <option value="Fovissste">Fovissste</option>
+                    <option value="Bancario">Bancario</option>
+                    <option value="Otro">Otro</option>
                   </select>
-                  <label for="asunto">Servicio</label>
                 </div>
+                </div>
+                  <input type="hidden" id="utm_source" name="utm_source" class="utms">
+                  <input type="hidden" id="utm_medium" name="utm_medium" class="utms">
+                  <input type="hidden" id="utm_campaign" name="utm_campaign" class="utms">
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Enviar Mensaje</button>
+                </div>
+
               </div>
-            </div>
-          </div>
-          <div class="col-md-12 mt-4">
-            <div class="form-floating">
-              <textarea class="form-control form-control-message" name="mensaje" id="mensaje" placeholder="" rows="10"
-                required></textarea>
-                <label for="message">Mensaje</label>
-            </div>
-          </div>
-          <div class="col-12 mx-auto mt-3">
-            <div class="d-grid">
-              <button class="btn btn-primary solid blank"  type="submit">Enviar Mensaje</button>
-            </div>
-          </div>
-        </form>
+            </form>
+          </div><!-- End Contact Form -->
+
+        </div>
+
       </div>
 
-    </div>
-  </div>
-</section>
+    </section>
+</main>
 <script>
+  // Script to fill UTM parameters in the form fields
+  function getURLParameter(name) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(name) || '';
+  }
+
+  function llenarCamposUTM() {
+      const utmParams = [
+          "utm_source",
+          "utm_medium",
+          "utm_campaign",
+          "utm_term",
+          "utm_content"
+      ];
+
+      utmParams.forEach(param => {
+          const input = document.getElementById(param);
+          if (input) {
+              input.value = getURLParameter(param);
+          }
+      });
+  }
 document.addEventListener('DOMContentLoaded', function () {
   const form = document.getElementById('contactForm');
   const result = document.getElementById('result');
-
+  // Llenar los campos UTM al cargar la página
+  llenarCamposUTM();
   form.addEventListener('submit', function (e) {
     e.preventDefault();
 
     const formData = new FormData(form);
 
-    fetch('contacto/enviarMensaje', {method: 'POST', body: formData})
+    fetch('contacto/submitWebhookData', {method: 'POST', body: formData})
     .then(response => response.json())
     .then(res => {
       result.innerHTML = `<p>${res.message}</p>`;

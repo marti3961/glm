@@ -55,7 +55,7 @@
               <div class="icon">
                 <img src="/assets/img/icon-service/rentandsale.png" width="40px" alt="" class="src">
               </div>
-              <a href="/servicios/quieres-rentar-vender" class="stretched-link">
+              <a href="servicios-quieres-rentar-vender" class="stretched-link">
                 <h3>¿Quieres Rentar o Vender?</h3>
               </a>
               <p>Deja todo en nuestras manos. Mostramos tu casa, buscamos al cliente ideal y tú solo disfrutas los beneficios.
@@ -68,7 +68,7 @@
               <div class="icon">
                 <img src="/assets/img/icon-service/En-renta.png" width="40px" alt="" class="src">
               </div>
-              <a href="servicios/quieres-rentar" class="stretched-link">
+              <a href="servicios-quieres-rentar" class="stretched-link">
                 <h3>Casas en Renta</h3>
               </a>
               <p>Vive cómodo, seguro y sin complicaciones. Casas listas para ti en fraccionamientos con todo lo que necesitas.
@@ -81,7 +81,7 @@
               <div class="icon">
                 <img src="/assets/img/icon-service/En-venta.png" width="40px" alt="" class="src">
               </div>
-              <a href="servicios/quieres-vender" class="stretched-link">
+              <a href="servicios-quieres-vender" class="stretched-link">
                 <h3>Casas en Venta</h3>
               </a>
               <p>Haz realidad tu sueño de tener casa propia.
@@ -96,7 +96,7 @@
               <div class="icon">
                 <img src="/assets/img/icon-service/Financiamiento.png" width="40px" alt="" class="src">
               </div>
-              <a href="servicios/quieres-financiamiento" class="stretched-link">
+              <a href="servicios-quieres-financiamiento" class="stretched-link">
                 <h3>Financiamiento a tu Medida</h3>
               </a>
               <p>Te asesoramos para que elijas el crédito que mejor se adapte a ti. 
@@ -110,7 +110,7 @@
               <div class="icon">
                 <img src="/assets/img/icon-service/Nuevos-proyec.png" width="40px" alt="" class="src">
               </div>
-              <a href="servicios/proximos-proyectos" class="stretched-link">
+              <a href="servicios-proximos-proyectos" class="stretched-link">
                 <h3>Próximos Proyectos</h3>
               </a>
               <p>Seguimos construyendo nuevos espacios para ti. 
@@ -122,62 +122,98 @@
       </div>
     </section><!-- /Services Section -->
 
-    <!-- Agents Section -->
-    <!-- <section id="agents" class="agents section">
+  
+  <section id="real-estate" class="real-estate section">
       <div class="container section-title" data-aos="fade-up">
-        <h2>Our Agents</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <h2>Nuestros Desarrollos</h2>
+        <p>Miles de familias han alcanzado el sueño de tener su hogar con GLM</p>
       </div>
       <div class="container">
-        <div class="row gy-5">
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+
+        <div class="row gy-4 d-flex justify-content-center">
+          <!-- Desarrollo 1-->
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+              <img src="assets/img/desarrollos/san-antonio.jpg" alt="" class="img-fluid">
+              <div class="card-body">
+                <!-- <span class="sale-rent">Rent | $1200</span> -->
+                <h3><a href="desarrollo-san-antonio-pachuquilla" class="stretched-link">San Antonio Pachuquilla</a></h3>
+                <div class="card-content d-flex flex-column justify-content-center text-center">
+                  <div class="row propery-info">
+                    <div class="col">2 modelos de vivienda</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Rent Manager</span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+          <!-- Desarrollo 1 -->
+           <!-- Desarrollo 2-->
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+              <img src="assets/img/desarrollos/valle-del-alamo.jpg" alt="" class="img-fluid">
+              <div class="card-body">
+                <!-- <span class="sale-rent">Rent | $1200</span> -->
+                <h3><a href="desarrollo-valle-del-alamo" class="stretched-link">Valle del Alamo</a></h3>
+                <div class="card-content d-flex flex-column justify-content-center text-center">
+                  <div class="row propery-info">
+                    <div class="col">Un espacio ideal donde vivir y crecer.</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="member">
-              <div class="pic"><img src="assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>Sale manager<br></span>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter-x"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
+          <!-- Desarrollo 2 -->
+           <!-- Desarrollo 3-->
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+              <img src="assets/img/desarrollos/la-palma.jpg" alt="" class="img-fluid">
+              <div class="card-body">
+                <!-- <span class="sale-rent">Rent | $1200</span> -->
+                <h3><a href="desarrollo-privada-la-palma" class="stretched-link">Privada la palma</a></h3>
+                <div class="card-content d-flex flex-column justify-content-center text-center">
+                  <div class="row propery-info">
+                    <div class="col">Tranquilidad y el confort familiar.</div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- Desarrollo 3-->
+           <!-- Desarrollo 4-->
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+              <img src="assets/img/desarrollos/paseo-reynas.jpg" alt="" class="img-fluid">
+              <div class="card-body">
+                <!-- <span class="sale-rent">Rent | $1200</span> -->
+                <h3><a href="desarrollo-paseo-de-las-reynas" class="stretched-link">Paseo de las Reynas</a></h3>
+                <div class="card-content d-flex flex-column justify-content-center text-center">
+                  <div class="row propery-info">
+                    <div class="col">Diseñado pensando en tu comodidad.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Desarrollo 4 -->
+           <!-- Desarrollo 5-->
+          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card">
+              <img src="assets/img/desarrollos/las-peras.jpg" alt="" class="img-fluid">
+              <div class="card-body">
+                <!-- <span class="sale-rent">Rent | $1200</span> -->
+                <h3><a href="desarrollo-las-peras" class="stretched-link">Las Peras</a></h3>
+                <div class="card-content d-flex flex-column justify-content-center text-center">
+                  <div class="row propery-info">
+                    <div class="col">Diseñado pensando en tu comodidad</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Desarrollo 5 -->
         </div>
       </div>
-    </section> -->
+    </section> 
     <!-- /Agents Section -->
 
     <!-- Testimonials Section -->

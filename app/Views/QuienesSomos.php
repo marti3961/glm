@@ -45,7 +45,7 @@
 
           <div class="col-lg-6 content aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
             <p class="who-we-are">¿Quienes somos?</p>
-            <h3>Unleashing Potential with Creative Strategy</h3>
+            <!-- <h3>Unleashing Potential with Creative Strategy</h3> -->
             <p class="fst-italic">
                 En GLM somos una empresa 100% mexicana, construida con amor, cimentada en valores y dedicada a crear hogares con esmero.
                 <ul>

@@ -26,8 +26,8 @@
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Contact</li>
+            <li><a href="<?= base_url() ?>">Inicio</a></li>
+            <li class="current">Contáctanos</li>
           </ol>
         </div>
       </nav>

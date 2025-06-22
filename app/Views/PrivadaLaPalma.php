@@ -27,7 +27,7 @@
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="index.html">Desarrollo</a></li>
+            <li><a href="<?= base_url() ?>">Inicio</a></li>
             <li class="current">PRIVADA LA PALMA</li>
           </ol>
         </div>

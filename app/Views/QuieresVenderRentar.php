@@ -27,8 +27,7 @@
       <nav class="breadcrumbs">
         <div class="container">
           <ol>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="index.html">Servicios</a></li>
+            <li><a href="<?= base_url() ?>">Inicio</a></li>
             <li class="current">¿Quires rentar o vender ?</li>
           </ol>
         </div>

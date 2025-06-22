@@ -65,6 +65,27 @@ class Home extends BaseController
         return $this->render('ValleDelAlamo',[]);
     }
 
+    public function proximos_proyectos(): string
+    {
+        return $this->render('ProximosProyectos',[]);
+    }
+    
+    public function proximos_proyectos_locales(): string
+    {
+        return $this->render('ProyectosLocales',[]);
+    }
+    public function proximos_proyectos_casas(): string
+    {
+        return $this->render('ProyectosCasas',[]);
+    }
+    public function proximos_proyectos_plazas(): string
+    {
+        return $this->render('ProyectosPlazas',[]);
+    }
+    public function proximos_proyectos_terrenos(): string
+    {
+        return $this->render('ProyectosTerrenos',[]);
+    }
     
     public function contacto(): string
     {

@@ -152,7 +152,6 @@
             <div class="card">
               <img src="assets/img/desarrollos/valle-del-alamo.jpg" alt="" class="img-fluid">
               <div class="card-body">
-                <!-- <span class="sale-rent">Rent | $1200</span> -->
                 <h3><a href="desarrollo-valle-del-alamo" class="stretched-link">Valle del Alamo</a></h3>
                 <div class="card-content d-flex flex-column justify-content-center text-center">
                   <div class="row propery-info">

@@ -28,7 +28,6 @@
         <div class="container">
           <ol>
             <li><a href="/">Inicio</a></li>
-            <li><a href="/">Servicios</a></li>
             <li class="current">¿Quieres rentar?</li>
           </ol>
         </div>

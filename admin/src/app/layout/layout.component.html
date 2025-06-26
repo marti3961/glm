@@ -21,17 +21,23 @@
         @else{
           <ul class="nav col-12 col-lg-auto my-2 justify-content-center my-md-0 text-small" style="color:rgb(255, 173, 13)!important;">
             <li>
-              <a [routerLink]="['/']" class="nav-link text-primary">
+              <a [routerLink]="['/configuracion-general']" class="nav-link text-primary">
                 <div class="d-flex flex-column align-items-center">
-                  <!-- <i class="fa-solid fa-gauge-high fa-1x"></i> -->
-                  <span>Dashboard</span>
+                  <span>Configuración General</span>
                 </div>
               </a>
             </li>
             <li>
-              <a [routerLink]="['/mensajes']" class="nav-link text-primary">
+              <a [routerLink]="['/sliders']" class="nav-link text-primary">
                 <div class="d-flex flex-column align-items-center">
-                  <span>Mensajes</span>
+                  Slider Principal
+                </div>
+              </a>
+            </li>
+            <li>
+              <a [routerLink]="['/testimonios']" class="nav-link text-primary">
+                <div class="d-flex flex-column align-items-center">
+                  <span>Testimonios</span>
                 </div>
               </a>
             </li>
@@ -39,37 +45,22 @@
               <a [routerLink]="['/cotizaciones']" class="nav-link text-primary">
                 <div class="d-flex flex-column align-items-center">
                   <!-- <i class="fa-solid fa-file-invoice-dollar" style="font-size: medium;"></i> -->
-                  <span>Cotizaciones</span>
+                  <span>Proyectos</span>
                 </div>
               </a>
             </li>
-            <li>
-              <a [routerLink]="['/productos']" class="nav-link text-primary">
-                <div class="d-flex flex-column align-items-center">
-                  <!-- <i class="fa-solid fa-truck-field fa-1x"></i> -->
-                  Productos
-                </div>
-              </a>
-            </li>
-            <li>
-              <a [routerLink]="['/productos-extras']" class="nav-link text-primary">
-                <div class="d-flex flex-column align-items-center">
-                  Productos Extras
-                </div>
-              </a>
-            </li>
-            <li>
+            <!-- <li>
               <a  class="btn btn-primary noscale dropdown-toggle d-block d-md-inline-block outline-0" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="fa-solid fa-screwdriver-wrench fa-1x"></i>
               </a>
                <ul class="dropdown-menu">
-                <!-- <li><a [routerLink]="['/usuarios']" class="dropdown-item" href="#">Usuarios</a></li> -->
+                <li><a [routerLink]="['/usuarios']" class="dropdown-item" href="#">Usuarios</a></li>
                 <li><a [routerLink]="['/sliders']" class="dropdown-item" href="#">Carousel</a></li>
                 <li><a [routerLink]="['/configuracion-general']" class="dropdown-item" href="#">Configuración General</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li><a class="dropdown-item" (click)="logout()">Salir</a></li>
               </ul>
-            </li>
+            </li> -->
           </ul>
         }
 

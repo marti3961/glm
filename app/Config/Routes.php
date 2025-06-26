@@ -33,6 +33,8 @@ $routes->get('/sitemap', 'Sitemap::index');
 
 //end public views routing 
 $routes->post('login', 'Auth::login',['filter'=>'cors']);
+// Route for a single project detail page
+$routes->get('proyectos/(:segment)', 'Projects::detail/$1');
 $routes->group('api', ['filter' => 'cors','auth'], function ($routes) {
     $routes->get('users', 'Users::index');
     $routes->get('users/(:num)', 'Users::show/$1');

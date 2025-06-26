@@ -90,12 +90,12 @@
                  Ubicación privilegiada:<br/>
                   A solo 1 minuto del Río de las Avenidas<br/>
                   5 minutos de Av. Revolución<br/>
-                  10 minutos de Av. Madero
+                  5 minutos de Av. Madero
               </p>
 
               <p>
                 Contará con:<br/>
-                10 locales comerciales<br/>
+                11 locales comerciales<br/>
                 Terraza con vista y ambiente único<br/>
                 Alturas desde 3.5m, ideales para doble altura o entrepiso<br/>
                 Precios desde $8,000
@@ -105,7 +105,8 @@
                 ¡Una oportunidad de inversión que no querrás dejar pasar!<br/>
                 Locales en prerenta — asegura el tuyo y haz crecer tu negocio desde el corazón de Pachuca.<br/>
                 Contáctanos para conocer disponibilidad y condiciones.<br/>
-                Plaza Mina Loreto: Tu siguiente gran movimiento.
+                Plaza Mina Loreto: Tu siguiente gran movimiento.<br/>
+                Síguenos en FB <a href="https://www.facebook.com/plazaminaloreto" target="_blank">https://www.facebook.com/plazaminaloreto</a>
               </p>
             </div>
             <ul class="nav nav-pills mb-3">
@@ -116,7 +117,7 @@
             </ul>
             <div class="tab-content">
               <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                  <iframe style="border:0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747.8138059886023!2d-98.70128810000001!3d20.0582402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1a765aa8e7fc9%3A0xa8c799c25388c256!2sFraccionamiento%20San%20Antonio%20Pachuquilla!5e0!3m2!1ses-419!2smx!4v1750566814277!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                  <iframe style="border:0; width: 100%; height: 400px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d29973.028724709602!2d-98.7678163!3d20.1078069!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d109b7b3e8e699%3A0x509fedd4e56e718f!2sPlaza%20Mina%20Loreto!5e0!3m2!1ses-419!2smx!4v1750904436727!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
           </div>
@@ -125,7 +126,7 @@
               <h3>Información</h3>
               <ul>
                 <li><strong>Tipo:</strong> Local Comercial</li>
-                <li><strong>Ubicación:</strong> Pachuca Hidalgo.</li>
+                <li><strong>Ubicación:</strong> Colonia Real de Minas No 501 A, Pachuca Hidalgo, CP 42090</li>
                 <li><strong>Estado:</strong> En Renta</li>
                 <li><strong>Terreno:</strong> Desde 15.21x4.50</li>
                 <li><strong>Construcción:</strong> Desde 15.21x4.50</li>

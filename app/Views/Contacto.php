@@ -39,7 +39,7 @@
 
         <div class="mb-4" data-aos="fade-up" data-aos-delay="200">
           
-            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2127.9414570729778!2d-98.71650167142185!3d20.090576546154693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1a70d468e9f63%3A0xf0a1d694a92b78d5!2sGLM%20Arquitectura!5e0!3m2!1ses-419!2smx!4v1750177309368!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe style="border:0; width: 100%; height: 270px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3747.1524194373965!2d-98.7103508!3d20.0859144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1a7b7896446b1%3A0x3574f87c6e258e55!2sGLM%20ARQUITECTURA!5e0!3m2!1ses-419!2smx!4v1750904889543!5m2!1ses-419!2smx" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div><!-- End Google Maps -->
 
         <div class="row gy-4">
@@ -50,7 +50,7 @@
               <div>
                 <h4>Dirección</h4>
                 <p>Av Reyna de los Venturosos 1003</p>
-                <p>Av Reyna de los Venturosos 1003,<br/> Privada de las Reynas V, 42184 Paseo de las Reynas, Hgo.</p>
+                <p>Privada de las Reynas V, 42184 Paseo de las Reynas, Hgo.</p>
               </div>
             </div><!-- End Info Item -->
 

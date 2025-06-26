@@ -1,11 +1,11 @@
 <?= $this->section('content') ?>
 <?php $this->section('metadata');?>
-<meta name="description" content="GLM Arquitectos">
-<meta name="keywords" content="GLM Arquitectos, Arquitectura, Construcción, Proyectos, Diseño">
-<meta name="author" content="GLM Arquitectos.">
+<meta name="description" content="GLM Arquitectura">
+<meta name="keywords" content="GLM Arquitectura, Arquitectura, Construcción, Proyectos, Diseño">
+<meta name="author" content="GLM Arquitectura.">
 <title><?= $site_name ?? 'GLM' ?></title>
-<meta property="og:title" content="GLM Arquitectos">
-<meta property="og:description" content="GLM Arquitectos - Innovación y Diseño en Arquitectura">
+<meta property="og:title" content="GLM Arquitectura">
+<meta property="og:description" content="GLM Arquitectura - Innovación y Diseño en Arquitectura">
 <meta property="og:type" content="website">
 <meta property="og:url" content="<?= current_url(); ?>">
 <?= $this->endSection();?>

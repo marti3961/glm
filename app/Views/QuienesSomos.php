@@ -1,11 +1,11 @@
 <?= $this->section('content') ?>
 <?php $this->section('metadata');?>
-<meta name="description" content="GLM Arquitectos">
-<meta name="keywords" content="GLM Arquitectos, Arquitectura, Construcción, Proyectos, Diseño">
-<meta name="author" content="GLM Arquitectos.">
+<meta name="description" content="GLM Arquitectura">
+<meta name="keywords" content="GLM Arquitectura, Arquitectura, Construcción, Proyectos, Diseño">
+<meta name="author" content="GLM Arquitectura.">
 <title><?= $site_name ?? 'GLM' ?></title>
-<meta property="og:title" content="GLM Arquitectos">
-<meta property="og:description" content="GLM Arquitectos - Innovación y Diseño en Arquitectura">
+<meta property="og:title" content="GLM Arquitectura">
+<meta property="og:description" content="GLM Arquitectura - Innovación y Diseño en Arquitectura">
 <meta property="og:type" content="website">
 <meta property="og:url" content="<?= current_url(); ?>">
 <?= $this->endSection();?>
@@ -47,7 +47,7 @@
             <p class="who-we-are">¿Quienes somos?</p>
             <!-- <h3>Unleashing Potential with Creative Strategy</h3> -->
             <p class="fst-italic">
-                En GLM somos una empresa 100% mexicana, construida con amor, cimentada en valores y dedicada a crear hogares con esmero.
+                En GLM Arquitectura somos una empresa 100% mexicana, construida con amor, cimentada en valores y dedicada a crear hogares con esmero.
                 <ul>
                 <li><i class="bi bi-check-circle"></i> <span>Creemos en el poder del esfuerzo, la solidaridad y el compromiso.</span></li>
                 <li><i class="bi bi-check-circle"></i> <span>Cada inmueble que desarrollamos refleja nuestra pasión por hacer bien las cosas y ofrecer a cada familia un espacio digno, cálido y duradero.</span></li>
@@ -138,9 +138,9 @@
             <h3>Nuestra misión</h3>
             <p>
                 Somos una empresa hidalguense que desarrolla soluciones de vivienda adaptadas a las necesidades de cada cliente, mediante:
-                <br/>- Proyectos de calidad
-                <br/>- Innovación constante en nuestros productos
-                <br/>- Un equipo comprometido y motivado al éxito
+                <br/>- Proyectos de calidad.
+                <br/>- Innovación constante en nuestros productos.
+                <br/>- Un equipo comprometido y motivado al éxito.
             </p>
             <h3>Nuestra visión</h3>
             <p>

@@ -11,7 +11,7 @@ $routes->options('(:any)', function () {
 //public views routing 
 $routes->get('/', 'Home::index');
 $routes->get('/quienes-somos', 'Home::quienes_somos');
-$routes->get('/servicios-quieres-rentar-vender', 'Home::quieres_vender_rentar');
+// $routes->get('/servicios-quieres-rentar-vender', 'Home::quieres_vender_rentar');
 $routes->get('/servicios-quieres-rentar', 'Home::quieres_rentar');
 $routes->get('/servicios-quieres-vender', 'Home::quieres_vender');
 $routes->get('/servicios-quieres-financiamiento', 'Home::quieres_financiamiento');
@@ -25,6 +25,8 @@ $routes->get('proximos-proyectos-locales', 'Home::proximos_proyectos_locales');
 $routes->get('proximos-proyectos-casas', 'Home::proximos_proyectos_casas');
 $routes->get('proximos-proyectos-plazas', 'Home::proximos_proyectos_plazas');
 $routes->get('proximos-proyectos-terrenos', 'Home::proximos_proyectos_terrenos');
+$routes->get('san-antonio-monserrat-petite', 'Home::san_antonio_monserrat_petite');
+$routes->get('san-antonio-monserrat', 'Home::san_antonio_monserrat');
 $routes->get('/contacto', 'Home::contacto');
 $routes->post('contacto/enviarMensaje', 'Home::enviarMensaje');
 $routes->get('/sitemap', 'Sitemap::index');

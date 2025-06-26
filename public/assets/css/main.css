@@ -709,6 +709,35 @@ section,
 @media (max-width: 575px) {
   .hero .carousel-container {
     inset: 90px 50px;
+    padding-top: 60px !important;
+  }
+  .hero .carousel {
+  width: 100%;
+  min-height: 400px;
+  padding-top: 40px;
+  margin: 0;
+  background-color: var(--background-color);
+  position: relative;
+  overflow: hidden;
+  }
+
+.hero img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  height: 400px;
+  /* object-fit: contain; */
+  object-fit: cover;
+  z-index: 1;
+}
+  .hero h2 {
+    font-size: 20px !important;
+  }
+
+  .btn-get-started {
+    font-size: 16px !important;
+    padding: 6px 20px!important;
+    margin-top: 10px!important;
   }
 }
 
@@ -723,11 +752,7 @@ section,
   color: var(--accent-color);
 }
 
-@media (max-width: 768px) {
-  .hero h2 {
-    font-size: 30px;
-  }
-}
+
 
 .hero .btn-get-started {
   color: var(--contrast-color);
@@ -1720,4 +1745,41 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
+}
+
+.wa-btn
+  {
+    width: 70px !important; 
+    height: 70px!important; 
+    background-color: #25D366;
+  }
+
+.wa-btn svg{
+  height: 49px !important;
+  width: auto !important;
+}
+.wa-cont{
+  bottom:50px !important; right: 30px !important;
+}
+.whatsapp-tooltip {
+  --bs-tooltip-bg: #25d366;
+  --bs-tooltip-color: #fff;
+  font-size: 14px;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+@media (max-width: 575px) {
+  .wa-btn
+  {
+    width: 50px !important; 
+    height: 50px!important; 
+    background-color: #25D366;
+  }
+  .wa-btn svg{
+    height: 35px !important;
+    width: auto !important;
+  }
+  .wa-cont{
+    bottom:60px !important; right: 20px !important;
+  }
 }

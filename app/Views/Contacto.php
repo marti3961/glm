@@ -8,7 +8,7 @@
 <meta property="og:description" content="Contáctenos para obtener más información sobre nuestros servicios de concreto, obra civil, cemento y asesoría. Estamos aquí para ayudarle a construir hoy mismo.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="<?= current_url() ?>">
-<title>CATÁCTANOS</title>
+<title>CONTÁCTANOS</title>
 <?= $this->endSection();?>
 <?= $this->section('content') ?>
   <main class="main">
@@ -18,7 +18,7 @@
         <div class="container">
           <div class="row d-flex justify-content-center text-center">
             <div class="col-lg-8">
-              <h1>CATÁCTANOS  </h1>
+              <h1>CONTÁCTANOS  </h1>
             </div>
           </div>
         </div>

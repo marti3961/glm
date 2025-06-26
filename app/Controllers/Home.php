@@ -45,7 +45,15 @@ class Home extends BaseController
     {
         return $this->render('SanAntonioPachuquilla',[]);
     }
-    
+    public function san_antonio_monserrat_petite(): string
+    {
+        return $this->render('SanAntonioMonserratPetite',[]);
+    }
+    public function san_antonio_monserrat(): string
+    {
+        return $this->render('SanAntonioMonserrat',[]);
+    }
+
     public function las_peras(): string
     {
         return $this->render('LasPeras',[]);

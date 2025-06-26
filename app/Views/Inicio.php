@@ -1,11 +1,11 @@
 <?= $this->section('content') ?>
   <?php $this->section('metadata');?>
-  <meta name="description" content="GLM Arquitectos">
-  <meta name="keywords" content="GLM Arquitectos, Arquitectura, Construcción, Proyectos, Diseño">
-  <meta name="author" content="GLM Arquitectos.">
+  <meta name="description" content="GLM Arquitectura">
+  <meta name="keywords" content="GLM Arquitectura, Arquitectura, Construcción, Proyectos, Diseño">
+  <meta name="author" content="GLM Arquitectura.">
   <title><?= $site_name ?? 'GLM' ?></title>
-  <meta property="og:title" content="GLM Arquitectos">
-  <meta property="og:description" content="GLM Arquitectos - Innovación y Diseño en Arquitectura">
+  <meta property="og:title" content="GLM Arquitectura">
+  <meta property="og:description" content="GLM Arquitectura - Innovación y Diseño en Arquitectura">
   <meta property="og:type" content="website">
   <meta property="og:url" content="<?= current_url(); ?>">
   <?= $this->endSection();?>
@@ -50,7 +50,7 @@
 
         <div class="row gy-4 align-self-center">
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <!--   <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="service-item  position-relative">
               <div class="icon">
                 <img src="/assets/img/icon-service/rentandsale.png" width="40px" alt="" class="src">
@@ -61,7 +61,7 @@
               <p>Deja todo en nuestras manos. Mostramos tu casa, buscamos al cliente ideal y tú solo disfrutas los beneficios.
                 <br/>¡Descubre más aquí!</p>
             </div>
-          </div><!-- End Service Item -->
+          </div>End Service Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="service-item position-relative">
@@ -236,8 +236,8 @@
               },
               "breakpoints": {
                 "320": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 40
+                  "slidesPerView": 1,
+                  "spaceBetween": 1
                 },
                 "1200": {
                   "slidesPerView": 2,

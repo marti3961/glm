@@ -69,6 +69,24 @@
               </div>
             </div>
           </div>
+          <?php if (isset($proyectos) && is_array($proyectos)): ?>
+            <?php foreach ($proyectos as $proyecto): ?>
+              <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                <div class="card">
+                  <img src="<?= $proyecto['image_mini'] ?>" alt="<?= $proyecto['title'] ?>" class="img-fluid">
+                  <div class="card-body">
+                    <h3><a href="<?= base_url('proyectos?p=' . $proyecto['id']) ?>" class="stretched-link"><?= $proyecto['id'] ?></a></h3>
+                  </div>
+                </div>
+              </div>
+            <?php endforeach; ?>
+          <?php else: ?>
+            <div class="col-12" data-aos="fade-up" data-aos-delay="100">
+              <div class="alert alert-warning" role="alert">
+                <strong>No hay proyectos disponibles en este momento.</strong> Por favor, revisa más tarde.
+              </div>
+            </div>
+          <?php endif; ?>
         </div>
       </div>
     </section> 

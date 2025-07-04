@@ -9,8 +9,17 @@ class Home extends BaseController
     public function index(): string
     {
         $sliders_ = new \App\Models\SliderModel();
+        $testimonios = new \App\Models\TestimoniosModel();
         $sliders = $sliders_->orderBy('position', 'ASC')->findAll();
-        return $this->render('Inicio',['sliders'=> $sliders]);
+        $testimonios = $testimonios->where('active', 1)->orderBy('orden', 'ASC')->findAll();
+        return $this->render('Inicio',['sliders'=> $sliders, 'testimonios' => $testimonios]);
+    }
+    public function proyectos(): string
+    {
+        $id = $this->request->getGet('p'); // gets ?id=value from the URL
+        $proyectosModel = new  \App\Models\ProyectosViewModel();
+        $proyecto = $proyectosModel->getProjectById($id);
+        return $this->render('ProyectosView', ['proyecto' => $proyecto]);
     }
     public function quienes_somos(): string
     {
@@ -75,7 +84,9 @@ class Home extends BaseController
 
     public function proximos_proyectos(): string
     {
-        return $this->render('ProximosProyectos',[]);
+        $projectModel = new  \App\Models\ProyectosViewModel();
+        $projects = $projectModel->findAll();
+        return $this->render('ProximosProyectos', ['proyectos' => $projects]);
     }
     
     public function proximos_proyectos_locales(): string
@@ -99,10 +110,10 @@ class Home extends BaseController
     {
         return $this->render('Contacto',[]);
     }
-    public function proyectos(): string
-    {
-        return $this->render('Proyectos',[]);
-    }
+    // public function proyectos(): string
+    // {
+    //     return $this->render('Proyectos',[]);
+    // }
 
     public function safeRedirect(string $path, array $query = [])
     {

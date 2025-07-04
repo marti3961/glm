@@ -1783,3 +1783,16 @@ section,
     bottom:60px !important; right: 20px !important;
   }
 }
+
+.ql-content {
+  max-width: auto; /* same width ratio as col-8 */
+  margin: 0 auto;         /* center horizontally */
+  white-space: normal;    /* allow wrapping */
+  word-wrap: break-word;  /* break long words */
+  line-height: 1.6;       /* easier reading */
+  font-family: inherit;   /* inherit fonts if needed */
+  padding: 0 1rem;        /* optional side padding */
+}
+.ql-content p {
+  margin-bottom: .5rem !important; /* space between paragraphs */
+}

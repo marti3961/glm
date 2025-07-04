@@ -11,6 +11,7 @@ $routes->options('(:any)', function () {
 //public views routing 
 $routes->get('/', 'Home::index');
 $routes->get('/quienes-somos', 'Home::quienes_somos');
+$routes->get('/proyectos', 'Home::proyectos');
 // $routes->get('/servicios-quieres-rentar-vender', 'Home::quieres_vender_rentar');
 $routes->get('/servicios-quieres-rentar', 'Home::quieres_rentar');
 $routes->get('/servicios-quieres-vender', 'Home::quieres_vender');
@@ -53,12 +54,6 @@ $routes->group('api', ['filter' => 'cors','auth'], function ($routes) {
     $routes->post('productExtras', 'ProductsExtra::create');
     $routes->put('productExtras/(:num)', 'ProductsExtra::update/$1');
     $routes->delete('productExtras/(:num)', 'ProductsExtra::delete/$1');
-    //Projects
-    $routes->get('/', 'Projects::index');
-    $routes->get('(:num)', 'Projects::show/$1');
-    $routes->post('/', 'Projects::create');
-    $routes->put('(:num)', 'Projects::update/$1');
-    $routes->delete('(:num)', 'Projects::delete/$1');
     //Contactanos
     $routes->get('mensajes', 'Contactanos::index');
     $routes->get('mensajes/(:num)', 'Contactanos::show/$1');
@@ -75,4 +70,19 @@ $routes->group('api', ['filter' => 'cors','auth'], function ($routes) {
     $routes->delete('sliders/(:num)', 'Slider::delete/$1');
     $routes->get('general_settings','GeneralSettings::index');	
     $routes->post('general_settings','GeneralSettings::update');	
+    //Proyectos
+    // Admin routes for managing projects
+    $routes->get('proyectos/(:segment)', 'Proyectos::getById/$1');
+    $routes->post('proyectos/save', 'Proyectos::store');
+    $routes->get('proyectos', 'Proyectos::index');
+    $routes->post('proyectos/(:segment)', 'Proyectos::update/$1');
+    $routes->delete('proyectos/(:segment)', 'Proyectos::delete/$1');
+    //Admin routes for managing testimonios
+    $routes->get('testimonios', 'Testimonios::index');
+    $routes->get('testimonios/(:segment)', 'Testimonios::show/$1');
+    $routes->post('testimonios', 'Testimonios::create');
+    $routes->put('testimonios/(:segment)', 'Testimonios::update/$1');
+    $routes->delete('testimonios/(:segment)', 'Testimonios::delete/$1');
+    
+
 });

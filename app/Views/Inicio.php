@@ -247,58 +247,29 @@
             }
           </script>
           <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="video-container">
-                  <iframe 
-                    width="100%" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/v62dUI9F-is" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                  </iframe>
+            <?php foreach ($testimonios as $testimonio): ?>
+              <div class="swiper-slide">
+                <div class="testimonial-item">
+                  <div class="video-container">
+                    <iframe 
+                      width="100%" 
+                      height="315" 
+                      src="<?= $testimonio['uri'] ?>" 
+                      title="YouTube video player" 
+                      frameborder="0" 
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                      allowfullscreen>
+                    </iframe>
+                  </div>
                 </div>
-              </div>
-            </div><!-- End testimonial item -->
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="video-container">
-                  <iframe 
-                    width="100%" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/PhspkIcdCOU" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                  </iframe>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <div class="video-container">
-                  <iframe 
-                    width="100%" 
-                    height="315" 
-                    src="https://www.youtube.com/embed/Rm2X9eWZYws" 
-                    title="YouTube video player" 
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                    allowfullscreen>
-                  </iframe>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
+              </div><!-- End testimonial item -->
+              <?php $i++; ?>
+            <?php endforeach; ?>
           </div>
           <div class="swiper-pagination"></div>
         </div>
-
       </div>
-
-    </section><!-- /Testimonials Section -->
+    </section>
 
   </main>
 

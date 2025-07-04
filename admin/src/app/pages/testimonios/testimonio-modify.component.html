@@ -1,0 +1,47 @@
+<div class="card shadow rounded-0">
+  <div class="p-3">
+    <h3><i class="fa-solid fa-store"></i> Testimonio</h3>
+  </div>
+  <div class="card-body ag-theme-quartz">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col-6">
+          <div class="form-floating mb-3">
+            <input type="text" id="title" [(ngModel)]="testimonio.id " name="title" required class="form-control" readonly>
+            <label for="title">ID</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="text" id="uri" [(ngModel)]="testimonio.uri" name="uri" class="form-control">
+            <label for="uri">URL Video </label>
+          </div>
+
+<!--
+          <div class="">
+             <figcaption class="blockquote-footer">
+              La imagen debe ser de 1600px de ancho y 800px de alto.
+            </figcaption>
+            <img *ngIf="imagePreview" [src]="imagePreview" alt="Image preview" class="img-fluid" style="max-height: 300px;" />
+          </div> -->
+        </div>
+
+        <div class="col-6">
+          <div class="form-floating mb-3">
+            <input type="number" id="orden" [(ngModel)]="testimonio.orden" name="orden" class="form-control" required>
+            <label for="orden">Posición</label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox"  name="active" [(ngModel)]="testimonio.active">
+            <label class="form-check-label" for="checkDefault">
+              Active
+            </label>
+          </div>
+          <div class="btn-toolbar mt-5 justify-content-end">
+            <button type="button" class="btn btn-secondary me-2" (click)="cancel()">Cancel</button>
+            <button type="button" class="btn btn-primary me-2" (click)="onSubmit()">Guardar Cambios</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

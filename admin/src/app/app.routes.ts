@@ -13,6 +13,10 @@ import { CotizacionesComponent } from './pages/cotizaciones/cotizaciones.compone
 import { SlidersComponent } from './pages/sliders/sliders.component';
 import { SliderModifyComponent } from './pages/sliders/slider-modify.component';
 import { GeneralSettingsComponent } from './pages/general-settings/general-settings.component';
+import { TestimoniosComponent } from './pages/testimonios/testimonios.component';
+import { TestimonioModifyComponent } from './pages/testimonios/testimonio-modify.component';
+import { ProyectosComponent } from './pages/proyectos/proyectos.component';
+import { ProyectosModifyComponent } from './pages/proyectos/proyectos-modify.component';
 
 export const routes: Routes = [
   {
@@ -20,16 +24,16 @@ export const routes: Routes = [
     canActivate: [authGuard],
     children: [
       { path: '', component: DashboardComponent},
-      // { path: 'productos', component: ProductsComponent},
-      // { path: 'productos/modify', component: ProductModifyComponent},
-      // { path: 'productos/modify/:id', component: ProductModifyComponent},
-      // { path: 'productos-extras', component: ProductsExtraComponent},
-      // { path: 'productos-extras/modify', component: ProductExtraModifyComponent},
-      // { path: 'productos-extras/modify/:id', component: ProductExtraModifyComponent},
       { path: 'configuracion-general',component:GeneralSettingsComponent},
       { path: 'sliders',component:SlidersComponent},
       { path: 'sliders/modify', component: SliderModifyComponent},
       { path: 'sliders/modify/:id', component: SliderModifyComponent},
+      { path: 'proyectos', component: ProyectosComponent},
+      { path: 'proyectos/modify', component: ProyectosModifyComponent},
+      { path: 'proyectos/modify/:id', component: ProyectosModifyComponent},
+      { path: 'testimonios', component: TestimoniosComponent},
+      { path: 'testimonios/modify', component: TestimonioModifyComponent},
+      { path: 'testimonios/modify/:id', component: TestimonioModifyComponent},
     ]
   },
   { path: 'login', component: LoginComponent },
